@@ -15,9 +15,9 @@
 <div>
   <ul>
 
-      <li>
+      <li id="atomlink_bar">
         <img src="http://cnsoup.com/data/out/43/IMW705866788.png"  height="18px" width="18px">
-        <strong><p><a href="/">AtomList</a></p></strong>
+        <strong><p id="atomlink_title"><a href="/">AtomList</a></p></strong>
 
       </li>
 
@@ -29,7 +29,7 @@
     {% for link in links %}
     <li >
       <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/51218-200.png"  height="60px" width="60px">
-      <h4><a href="{{ link.destination }}"> {{ link.title }}</a></h4>
+      <h6><a href="{{ link.destination }}"> {{ link.title }}</a></h4>
       <p>{{ link.description }}</p>
     </li>
     {%  endfor %}

@@ -1,12 +1,15 @@
 * {margin: 0; padding: 0;}
 
+
+
+
 div {
   margin: 20px;
 }
 
 ul {
   list-style-type: none;
-  width: 500px;
+  width: 450px;
 }
 
 h3 {
@@ -30,20 +33,20 @@ li {
 
 
 li:hover {
-  background: #fffeee;
+  background: #c1fffe;
   cursor: pointer;
 }
 
 #header {
-  background: #c1fffe;
+  background: #fffeee;
 }
 #about-atom-link {
-  background: #c1fffe;
+  background: #fffeee;
 }
 
 #header:hover {
-  background: #fffeee;
+  background: #c1fffe;
 }
 #about-atom-link:hover {
-  background: #fffeee;
+  background: #c1fffe;
 }

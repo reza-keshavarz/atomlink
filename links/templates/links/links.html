@@ -14,10 +14,17 @@
 
 <div>
   <ul>
+
+      <li>
+        <img src="http://cnsoup.com/data/out/43/IMW705866788.png"  height="18px" width="18px">
+        <strong><p><a href="/">AtomList</a></p></strong>
+
+      </li>
+
     <li id="header">
-      <img src="https://i.pinimg.com/736x/42/14/1f/42141fb11f2c395fefd96f371b14bee5--sun-logo-art-club.jpg"  height="60px" width="60px">
-      <h2><a href="/">This is Atom Link</a></h2>
-      <p>Atom Link will give the power to store all your links in one place, you can <a href="/">Register Now</a>, or <a href="/">Learn More</a>.</p>
+      <img src="http://cnsoup.com/data/out/43/IMW705866788.png"  height="60px" width="60px">
+      <h2><a href="/">{{ user_info.list_title }}</a></h2>
+      <p> {{ user_info.bio }}</p>
     </li>
     {% for link in links %}
     <li >

@@ -1,0 +1,42 @@
+{% load staticfiles %}
+<html>
+
+
+<head>
+  <link href="{% static "css/links.css" %}"rel="stylesheet">
+  <title> My links </title>
+</head>
+
+
+<body>
+
+
+
+<div>
+  <ul>
+    <li id="header">
+      <img src="https://i.pinimg.com/736x/42/14/1f/42141fb11f2c395fefd96f371b14bee5--sun-logo-art-club.jpg"  height="60px" width="60px">
+      <h2><a href="/">This is Atom Link</a></h2>
+      <p>Atom Link will give the power to store all your links in one place, you can <a href="/">Register Now</a>, or <a href="/">Learn More</a>.</p>
+    </li>
+    {% for link in links %}
+    <li >
+      <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/51218-200.png"  height="60px" width="60px">
+      <h4><a href="{{ link.destination }}"> {{ link.title }}</a></h4>
+      <p>{{ link.description }}</p>
+    </li>
+    {%  endfor %}
+    <hr/>
+    <li id="about-atom-link">
+      <img src="https://raw.githubusercontent.com/stvhwrd/icons/master/atom/Atom-no_shadows-512.png"  height="60px" width="60px">
+      <h3><a href="{{ ad.destination }}"> {{ ad.title }}</a></h3>
+      <p>{{ ad.description }}</p>
+    </li>
+
+  </ul>
+</div>
+
+
+</body>
+
+</html>

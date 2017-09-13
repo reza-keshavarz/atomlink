@@ -1,0 +1,25 @@
+
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  <link href="{% static "css/blog.css" %}"rel="stylesheet">
+</head>
+<body>
+  <div id="content">
+    {% block content %}
+    {% endblock %}
+  </div>
+  <div id="sidebar">
+    <h1><a href="/">My Links</a></h1>
+    <h2> Latest links: </h2>
+    {% for link in links %}
+      <strong><p><a href="{{ link.destination }}"> {{ link.title }} </a></p></strong>
+    {% endfor %}
+
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Link Zone {% endblock %}
+
+{% block content %}
+<h1> My Links</h1>
+
+
+
+{% for link in links %}
+<h2>
+  <a href="{{ link.destination }}">
+    {{ link.title}}
+  </a>
+</h2>
+<p class="date">
+  Published {{ link.publish}} by {{ link.author}}
+</p>
+{{ link.description }}
+{% endfor %}
+
+{% endblock %}
